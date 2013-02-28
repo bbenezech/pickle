@@ -32,7 +32,7 @@ module Mongoid
 
       # Find all models matching conditions
       def self.find_all_models(klass, conditions)
-        klass.all(:conditions => conditions)
+        klass.where(conditions)
       end
 
       # Create a model with given attributes
